@@ -1,0 +1,163 @@
+[
+  {
+    "id": "R001",
+    "name": "トマトパスタ",
+    "description": "シンプルなトマトパスタ",
+    "servings": 2,
+    "cookingTime": 15.5,
+    "category": "main",
+    "ingredients": [
+      {
+        "name": "トマト",
+        "amount": { "raw": "2個", "value": 2, "unit": "個" }
+      },
+      {
+        "name": "パスタ",
+        "amount": { "raw": "200g", "value": 200, "unit": "g" }
+      }
+    ],
+    "steps": [
+      { "order": 1, "text": "パスタを茹でる", "timerSec": 600 },
+      { "order": 2, "text": "トマトを炒める" }
+    ],
+    "nutrition": {
+      "calories": 450.5,
+      "nutrients": { "protein": 18.2 }
+    }
+  },
+  {
+    "id": "R002",
+    "name": "チキンサラダ",
+    "description": "ヘルシーなチキンサラダ",
+    "servings": 1,
+    "cookingTime": 10.0,
+    "category": "main",
+    "ingredients": [
+      {
+        "name": "鶏むね肉",
+        "amount": { "raw": "100g", "value": 100, "unit": "g" }
+      },
+      {
+        "name": "レタス",
+        "amount": { "raw": "50g", "value": 50, "unit": "g" }
+      }
+    ],
+    "steps": [
+      { "order": 1, "text": "鶏肉を焼く", "timerSec": 300 },
+      { "order": 2, "text": "レタスを洗う" },
+      { "order": 3, "text": "盛り付ける" }
+    ],
+    "nutrition": {
+      "calories": 250.0,
+      "nutrients": { "protein": 30.0 }
+    }
+  },
+  {
+    "id": "R003",
+    "name": "味噌汁",
+    "description": "定番の味噌汁",
+    "servings": 4,
+    "cookingTime": 5.0,
+    "category": "soup",
+    "ingredients": [
+      {
+        "name": "味噌",
+        "amount": { "raw": "大さじ2", "value": 2, "unit": "大さじ" }
+      },
+      {
+        "name": "豆腐",
+        "amount": { "raw": "100g", "value": 100, "unit": "g" }
+      }
+    ],
+    "steps": [
+      { "order": 1, "text": "だしを取る" },
+      { "order": 2, "text": "味噌を溶く" },
+      { "order": 3, "text": "豆腐を入れる" }
+    ],
+    "nutrition": {
+      "calories": 50.0,
+      "nutrients": { "protein": 5.0 }
+    }
+  },
+  {
+    "id": "R004",
+    "name": "ハンバーグ",
+    "description": "ジューシーなハンバーグ",
+    "servings": 2,
+    "cookingTime": 30.0,
+    "category": "main",
+    "ingredients": [
+      {
+        "name": "合挽き肉",
+        "amount": { "raw": "200g", "value": 200, "unit": "g" }
+      },
+      {
+        "name": "玉ねぎ",
+        "amount": { "raw": "1個", "value": 1, "unit": "個" }
+      }
+    ],
+    "steps": [
+      { "order": 1, "text": "玉ねぎをみじん切りにする" },
+      { "order": 2, "text": "肉と混ぜる" },
+      { "order": 3, "text": "成形して焼く", "timerSec": 900 }
+    ],
+    "nutrition": {
+      "calories": 600.0,
+      "nutrients": { "protein": 40.0 }
+    }
+  },
+  {
+    "id": "R005",
+    "name": "サラダ",
+    "description": "シンプルなサラダ",
+    "servings": 2,
+    "cookingTime": 3.0,
+    "category": "side",
+    "ingredients": [
+      {
+        "name": "レタス",
+        "amount": { "raw": "100g", "value": 100, "unit": "g" }
+      },
+      {
+        "name": "トマト",
+        "amount": { "raw": "1個", "value": 1, "unit": "個" }
+      }
+    ],
+    "steps": [
+      { "order": 1, "text": "野菜を洗う" },
+      { "order": 2, "text": "切る" },
+      { "order": 3, "text": "盛り付ける" }
+    ],
+    "nutrition": {
+      "calories": 30.0,
+      "nutrients": { "protein": 2.0 }
+    }
+  },
+  {
+    "id": "R006",
+    "name": "オムライス",
+    "description": "ふわふわオムライス",
+    "servings": 1,
+    "cookingTime": 20.0,
+    "category": "main",
+    "ingredients": [
+      {
+        "name": "ご飯",
+        "amount": { "raw": "200g", "value": 200, "unit": "g" }
+      },
+      {
+        "name": "卵",
+        "amount": { "raw": "2個", "value": 2, "unit": "個" }
+      }
+    ],
+    "steps": [
+      { "order": 1, "text": "ご飯を炒める" },
+      { "order": 2, "text": "卵を焼く", "timerSec": 180 },
+      { "order": 3, "text": "ご飯を包む" }
+    ],
+    "nutrition": {
+      "calories": 550.0,
+      "nutrients": { "protein": 20.0 }
+    }
+  }
+]

@@ -1,0 +1,57 @@
+[
+    {
+        "id": "R010",
+        "name": "A",
+        "description": "tie sort calories",
+        "servings": 1,
+        "cookingTime": 10.0,
+        "category": "main",
+        "ingredients": [],
+        "steps": [],
+        "nutrition": { "calories": 100.0, "nutrients": { "protein": 5.0 } }
+    },
+    {
+        "id": "R011",
+        "name": "B",
+        "description": "tie sort calories",
+        "servings": 1,
+        "cookingTime": 10.0,
+        "category": "main",
+        "ingredients": [],
+        "steps": [],
+        "nutrition": { "calories": 100.0, "nutrients": { "protein": 6.0 } }
+    },
+    {
+        "id": "R020",
+        "name": "C",
+        "description": "knap option 1",
+        "servings": 1,
+        "cookingTime": 10.0,
+        "category": "main",
+        "ingredients": [],
+        "steps": [],
+        "nutrition": { "calories": 120.0, "nutrients": { "protein": 10.0 } }
+    },
+    {
+        "id": "R021",
+        "name": "D",
+        "description": "knap option 2",
+        "servings": 1,
+        "cookingTime": 10.0,
+        "category": "main",
+        "ingredients": [],
+        "steps": [],
+        "nutrition": { "calories": 110.0, "nutrients": { "protein": 10.0 } }
+    },
+    {
+        "id": "R022",
+        "name": "E",
+        "description": "knap option 3",
+        "servings": 1,
+        "cookingTime": 9.0,
+        "category": "main",
+        "ingredients": [],
+        "steps": [],
+        "nutrition": { "calories": 110.0, "nutrients": { "protein": 10.0 } }
+    }
+]
