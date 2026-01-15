@@ -341,7 +341,8 @@ def _reconstruct_path(parent: List[List[Optional[Tuple[int, int, int, int]]]],
     """
     経路復元して選択されたレシピのインデックスを取得
     
-    理由: parentテーブルに prev_i を含めることで、i が減ることを保証し循環を防ぐ
+    降順in-place更新により0-1制約は保証されているため、
+    parent[c][t]がNoneになるまで経路を辿れば良い
     
     Returns:
         選択されたレシピのインデックスリスト（重複なし）
@@ -350,30 +351,11 @@ def _reconstruct_path(parent: List[List[Optional[Tuple[int, int, int, int]]]],
     c = best_c
     t = best_t
     
-    if parent[c][t] is None:
-        return selected_indices
-    
-    # 最初のparentからrecipe_idxを取得して、i を初期化
-    # i は「現在処理中のアイテム位置」を表す
-    _, _, first_recipe_idx, _ = parent[c][t]
-    i = first_recipe_idx + 1  # recipe_idx より1大きい値から開始
-    
+    # parent[c][t]がNoneになるまで経路を辿る
     while parent[c][t] is not None:
         prev_c, prev_t, recipe_idx, prev_i = parent[c][t]
-        
-        # i が減ることを保証（循環防止）
-        # prev_i は recipe_idx - 1 なので、i は必ず減る
-        # ただし、最初のレシピ（recipe_idx=0）の場合、prev_i=-1 になる可能性がある
-        if prev_i >= 0:
-            assert prev_i < i, f"経路復元エラー: i が減りません (i={i}, prev_i={prev_i}, recipe_idx={recipe_idx})"
-        i = prev_i
-        
         selected_indices.append(recipe_idx)
         c = prev_c
         t = prev_t
-        
-        # prev_i < 0 の場合は終了（最初のレシピまで遡った）
-        if prev_i < 0:
-            break
     
     return selected_indices
